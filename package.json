@@ -1,0 +1,25 @@
+{
+	"name": "babel_webpack",
+	"version": "1.0.0",
+	"description": "Babel Webpack Starter",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode-production --progress",
+		"start": "webpack-dev-server --output-public-path=/build/ --mode-development --progress --open --hot",
+		"json:server": "json-server --watch api/db.json"
+	},
+	"author": "Andrew Joel",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.9.0",
+		"@babel/polyfill": "^7.8.7",
+		"@babel/preset-env": "^7.9.0",
+		"babel-loader": "^8.1.0",
+		"json-server": "^0.16.1",
+		"materialize-css": "^1.0.0-rc.2",
+		"webpack": "^4.42.1",
+		"webpack-cli": "^3.3.11",
+		"webpack-dev-server": "^3.10.3"
+	}
+}

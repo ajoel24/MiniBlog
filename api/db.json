@@ -1,0 +1,9 @@
+{
+  "posts": [
+    {
+      "title": "New post",
+      "body": "This is a new post updated!",
+      "id": 3
+    }
+  ]
+}

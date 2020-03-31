@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="A simple microblogging app developed using
+		ES6 modules and Materialize CSS"
+		/>
+		<meta name="keywords" content="microposts, blog, ES6 modules, javascript" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Microposts Project</title>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/materialize-css/dist/css/materialize.min.css"
+		/>
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+
+	<body>
+		<header>
+			<nav class="nav-wrapper">
+				<a href="#" class="brand-logo center">MiniBlog</a>
+			</nav>
+		</header>
+
+		<main class="row">
+			<div class="col s10 offset-s1 m6 offset-m3">
+				<div class="card-large card-panel blue">
+					<div class="card-content white-text">
+						<span class="card-title"><h3>Say something</h3></span>
+						<h5>Share your thoughts</h5>
+						<div class="row">
+							<div class="input-field col s12">
+								<input
+									type="text"
+									class="validate"
+									maxlength="50"
+									id="post-title"
+									name="post-title"
+									autofocus
+								/>
+								<label for="post-title">Title</label>
+							</div>
+							<div class="input-field col s12">
+								<textarea
+									name="materialize-textarea"
+									maxlength="1000"
+									id="post-body"
+									name="post-body"
+									cols="30"
+									rows="30"
+								></textarea>
+								<label for="post-body">Content</label>
+							</div>
+							<input type="hidden" name="hidden" id="post-id" />
+							<button
+								id="post-submit"
+								class="btn btn-medium white black-text col s6 m6 l2 offset-s3 offset-m3 offset-l5 btn-large"
+							>
+								<i class="material-icons right">note_add</i>
+								Post It
+							</button>
+							<span id="form-end"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section id="posts"></section>
+
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col s6 offset-s3 m4 offset-m4">
+						<h6>MiniBlog &copy; 2020. Designed by Andrew.</h6>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script
+			defer
+			src="node_modules/materialize-css/dist/js/materialize.min.js"
+		></script>
+		<script defer src="build/index.bundle.js"></script>
+	</body>
+</html>
